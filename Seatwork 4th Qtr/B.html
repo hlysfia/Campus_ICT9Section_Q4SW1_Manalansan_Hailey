@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Currency Converter</title>
+	<style>
+		a button{
+			width: 120px;
+			height:40px;
+			display: block;
+			background-color: #901C4B;
+			color: white;
+           	}
+
+        button{
+        	background-color: #901C4B;
+			color: white;
+
+        }
+
+       body {
+       	background-color:#F4D4D8 ;
+       }
+
+       p {
+       	width: 240px;
+       	height: 20px;
+       }
+
+       div{text-align: center;
+       }
+
+	</style>
+</head>
+<div>
+<body>
+<h1>PHP to JPY</h1>
+ 
+
+<input type="text" id="input1" placeholder="Enter Value">
+	<button onclick="mulnumbers()">Compute</button>
+	<p style="border: 1px solid gray; background-color: white;" id="result"></p>
+
+<script type="text/javascript">
+	function mulnumbers() {
+		var Var1= parseFloat(document.getElementById("input1").value);
+
+		var Var2= 2.71;
+
+		var result= Var1 * Var2; 
+		document.getElementById("result").innerHTML = "¥" + result;
+	}
+</script>
+
+<a href="Seatwork.html"><button>HOME</button></a>
+
+</body>
+</div>
+</html>
